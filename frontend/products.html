@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products | Watch Store Only</title>
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css">
+</head>
+<body data-page="products">
+  <div id="site-header"></div>
+  <main class="page container">
+    <div class="page-head reveal"><p class="eyebrow">Collection</p><h1>Shop watches</h1><p>Search, filter, sort, and discover watches connected to the FastAPI catalog.</p></div>
+    <section class="shop-layout">
+      <aside class="filters glass-card">
+        <label>Search <input id="searchInput" type="search" placeholder="Titan, smart, chronograph"></label>
+        <label>Brand <select id="brandFilter"><option value="">All brands</option></select></label>
+        <label>Max price <input id="priceFilter" type="range" min="1000" max="50000" value="50000"><span id="priceValue">Rs 50000</span></label>
+        <label>Sort <select id="sortSelect"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name</option></select></label>
+        <button id="clearFilters" class="btn btn-ghost" type="button">Clear filters</button>
+      </aside>
+      <section>
+        <div class="toolbar"><span id="resultCount"></span><div id="productLoader" class="loader hidden"></div></div>
+        <div id="productsGrid" class="product-grid"></div>
+        <div id="pagination" class="pagination"></div>
+      </section>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/api.js"></script><script src="js/app.js"></script><script src="js/agent.js"></script><script src="js/products.js"></script>
+</body>
+</html>

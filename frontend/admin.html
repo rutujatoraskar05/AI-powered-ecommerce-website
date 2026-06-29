@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Admin Dashboard | Watch Store Only</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/admin.css"></head>
+<body data-page="admin">
+  <div id="site-header"></div>
+  <main class="page container">
+    <div class="page-head"><p class="eyebrow">Admin</p><h1>Dashboard</h1></div>
+    <section id="adminStats" class="stats-grid"></section>
+    <section class="admin-grid">
+      <div class="glass-card"><h2>Revenue</h2><canvas id="revenueChart" width="600" height="260"></canvas></div>
+      <div class="glass-card"><h2>Management</h2><div class="tabs"><button data-admin-tab="products" class="active">Products</button><button data-admin-tab="orders">Orders</button><button data-admin-tab="users">Users</button></div><div id="adminTable"></div></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/api.js"></script><script src="js/app.js"></script><script src="js/agent.js"></script><script src="js/admin.js"></script>
+</body>
+</html>
